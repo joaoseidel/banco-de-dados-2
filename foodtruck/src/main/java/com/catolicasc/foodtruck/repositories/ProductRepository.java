@@ -22,7 +22,7 @@ import java.util.logging.Logger;
  */
 public class ProductRepository {
     private static final String TABLE_NAME = "PRODUCTS";
-    
+
     private final Connection connection;
     
     public ProductRepository() {

@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 public class UserRepository {
     private static final String TABLE_NAME = "USERS";
     
-    private Connection connection;
+    private final Connection connection;
     
     public UserRepository() {
         connection = new ConnectionFactory().getConnection();
