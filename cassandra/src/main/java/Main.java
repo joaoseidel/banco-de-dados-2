@@ -6,7 +6,7 @@ public class Main {
     private Session session;
 
     public static void main(String[] args) {
-        // connecta um cluster
+        // connecta
         final CassandraConnector client = new CassandraConnector();
         client.connect("localhost", 7000);
 
@@ -30,7 +30,7 @@ public class Main {
         // removendo um filme
         moviePersistence.deleteMovieWithTitleAndYear("Submarine", 2010);
 
-        // fecha a sessão com um cluster
+        // fecha a sessão
         client.close();
     }
 }
